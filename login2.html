@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Logga in</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+      }
+      input {
+        padding: 10px;
+        width: 300px;
+        margin-bottom: 10px;
+      }
+      button {
+        padding: 10px 20px;
+        width: 320px;
+        background-color: #455157;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        font-weight: bold;
+      }
+      .link {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ange ditt lösenord</h1>
+
+    <form>
+      <label for="email">E-post</label><br />
+      <input
+        type="email"
+        id="email"
+        value="patriknygren82@gmail.com"
+        readonly
+      /><br />
+
+      <label for="password">Lösenord</label><br />
+      <input type="password" id="password" placeholder="Lösenord" /><br />
+
+      <a href="#" class="link">Har du glömt lösenordet?</a><br /><br />
+
+      <button type="submit">Logga in</button>
+    </form>
+
+    <p class="link">Har du inget konto? <a href="#">Registrera dig</a></p>
+  </body>
+</html>
